@@ -9,9 +9,11 @@ from arithmetic import *
 
 # Your code goes here
 while True:
-    input_string = "add num1 num2"
-    tokens = input_string.split(" ")
+    input_string = input(">")
+    token = input_string.split(" ")
     if token[0] == "q":
         break
     else:
-        add(num1,num2)    
+        print (add(int(token[1]), int(token[2])))
+
+        
